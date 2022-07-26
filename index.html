@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<style>
+    #footer_nav {
+        list-style: none;
+        margin: 0;
+    }
+</style>
 <body>
     <header class="header">
         <div class="container">
@@ -14,20 +20,23 @@
                 <div class="user">
                     <img class="user_avatar" src="images/avat.jpg" alt="">
                     <div class="user_content">
-                        <div class="user_name">Denis <br> Bazitov</div>
+                        <div class="user_name">Denis<br> Bazitov</div>
                         <div class="user_prof">Web Developer</div>
                     </div>
                 </div>
 
                 <div class="nav">
-                    <a class="nav_link" href="#">Work</a>
-                    <a class="nav_link" href="#">About me</a>
-                    <a class="nav_link" href="#">Blog</a>
-                    <a class="nav_link" href="#">Contact</a>
+                    <li style="list-style: none;">
+                        <a class="nav_link" href="#my_works">Work</a>
+                        <a class="nav_link" href="#about_me">About me</a>
+                        <a class="nav_link" href="#">Blog</a>
+                        <a class="nav_link" href="#coon">Contact</a>
+                    </li>
                 </div>
             </div>
         </div>
     </header>
+
 
     <div class="intro">
         <div class="container">
@@ -37,24 +46,25 @@
                     <h1 class="intro_title">Denis Bazitov</h1>
                     <div class="intro_text">Junior Web Developer</div>
 
-                    <div class="social">
-                        <a class="social_link" href="#">
-                            <img src="images/tg.png" alt="">
+                    <div id="coon" class="social">
+                        <a class="social_link" href="telegram.org">
+                            <img src="images/tg.png" alt="tg page">
                         </a>
                         <a class="social_link" href="https://vk.com/dbazitov" target="_blank">
-                            <img src="images/vk.jpg" alt="">
+                            <img src="images/vk.jpg" alt="vk page">
                         </a>
                     </div>
-
-                    <button class="btn" type="button"> SEE MY RESUME</button>
+                    <form action="https://github.com/SterbenHope" target="_blank">
+                        <button class="btn" type="submit">MY GITHUB</button>
+                    </form>
                 </div>
 
-                <img class="intro_photo" src="images/putin.jpg" alt="">
+                <img class="intro_photo" src="images/putin.jpg" alt="my photo">
             </div>
         </div>
     </div>
 
-    <div class="works">
+    <div id="my_works" class="works">
         <div class="container">
             <h3 class="text_center">my works</h3>
 
@@ -92,9 +102,9 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div id="about_me" class="about">
         <div class="about_iner">
-            <img class="about_photo" src="images/410.jpg">
+            <img class="about_photo" src="images/410.jpg" alt="my photo">
 
             <div class="about_con">
                 <h3 class="about_title">about me</h3>
@@ -104,7 +114,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea modi enim eveniet odio expedita aspernatur et doloribus, impedit repellat? Iusto harum numquam quia, rem ab aliquam necessitatibus atque perspiciatis sed?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea modi enim eveniet odio expedita aspernatur et doloribus, impedit repellat? Iusto harum numquam quia, rem ab aliquam necessitatibus atque perspiciatis sed?</p>
                 </div>
-                <button class="btn" type="button">see my resume</button>
+                <form action="https://github.com/SterbenHope" target="_blank">
+                    <button class="btn" type="submit">MY GITHUB</button>
+                </form>
             </div>
         </div>
     </div>
@@ -115,16 +127,17 @@
                 <div class="footer_info">
                     <div class="footer_copy">
                         &copy; 2022 - Denis Bazitov
-                        
                     </div>
                     <div class="footer_cop">У меня нет соцсетей</div>
                 </div>
 
                 <div class="nav">
-                    <a class="footer_nav_link" href="#">work</a>
-                    <a class="footer_nav_link" href="#">about me</a>
-                    <a class="footer_nav_link" href="#">blog</a>
-                    <a class="footer_nav_link" href="#">contact</a>
+                    <ol id="footer_nav">
+                        <a class="footer_nav_link" style="margin-left: 0;" href="#">work</a>
+                        <a class="footer_nav_link" href="#">about me</a>
+                        <a class="footer_nav_link" href="#">blog</a>
+                        <a class="footer_nav_link" href="#">contact</a>
+                    </ol>
                 </div>
             </div>
         </div>

@@ -78,6 +78,19 @@ p {
     height: 100%;
 }
 
+#nav_li {
+    direction: none;
+}
+
+#btn_git {
+    text-decoration: none;
+    color: #2b2a2c;
+}
+
+#btn_git:hover {
+    color: white;
+}
+
 .nav_link {
     margin-left: 2rem;
     position: relative;
@@ -137,6 +150,16 @@ p {
     transform: translateY(-5px);
 }
 
+#w1 {
+    width: 100px;
+    box-sizing: border-box;
+}
+
+#w1:focus {
+    outline: none;
+    border: 5px solid yellow;
+}
+
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -157,6 +180,12 @@ p {
 .btn:hover {
     background: black;
     color: white;
+}
+
+.btn:focus {
+    z-index: -1;
+    outline: none;
+    border: 1px outset blue;
 }
 
 .intro_photo {
@@ -203,6 +232,7 @@ p {
     padding: 1rem 0.8rem;
 
 }
+
 
 .work_cat {
     font-size: 0.75rem;
